@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        \<color name="dark_blue">#00008B</color> <!-- Example dark blue color, adjust as needed -->
+        <color name="lightGray">#E0E0E0</color>
+        <color name="darkGray">#9A9696</color>
+        <color name="navyBlue">#003366</color>
+        <color name="teal">#008080</color>
+        <color name="colorPrimary">#00008B</color>
+        <color name="colorPrimaryDark">#00008B</color>
+        <color name="colorAccent">#03DAC5</color>
+        <color name="black">#000000</color>
+        <color name="white">#FFFFFF</color>
+
+
+</resources>

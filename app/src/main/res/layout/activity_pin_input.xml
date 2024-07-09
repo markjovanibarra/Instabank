@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PinInputActivity"
+    android:background="@drawable/bg4">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/insta_icon"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="85dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:id="@+id/tv_mpin_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your MPIN"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_mpin_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/editTextPin1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/border" />
+
+            <EditText
+                android:id="@+id/editTextPin2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/border" />
+
+            <EditText
+                android:id="@+id/editTextPin3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/border" />
+
+            <EditText
+                android:id="@+id/editTextPin4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/border" />
+
+            <EditText
+                android:id="@+id/editTextPin5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/border" />
+
+            <EditText
+                android:id="@+id/editTextPin6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/border" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSubmitPin"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/navyBlue"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/tv_mpin_prompt"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonUseBiometric"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="Use Biometric"
+            android:drawableTop="@drawable/biometric"
+            android:textSize="20sp"
+            android:textColor="#008080"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/buttonSubmitPin"
+            app:rippleColor="#04F6C3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_help_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help Center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="60dp" />
+
+        <TextView
+            android:id="@+id/tv_forgot_mpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot MPIN?"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:onClick="onForgotMPINClicked"
+            android:layout_marginStart="60dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

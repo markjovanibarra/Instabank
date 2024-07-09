@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/textViewRealCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Realtime Currency"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/realcurrency"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/border_3"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@+id/textViewRealCurrency">
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter amount"
+            android:fontFamily="@font/montserrat_light"
+            android:background="@drawable/btn_1"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <Spinner
+            android:id="@+id/spinnerFromCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAmount"
+            android:layout_marginBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerToCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerFromCurrency"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewConvertedAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerToCurrency"
+            android:text="Converted Amount: "
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/navigation_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/realcurrency"
+        android:elevation="8dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/buttonOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/transact"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/home"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/user"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

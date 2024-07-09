@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "362142986109",
+    "firebase_url": "https://instabank-ae38e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "instabank-ae38e",
+    "storage_bucket": "instabank-ae38e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362142986109:android:a0e04e24bbcf836032a614",
+        "android_client_info": {
+          "package_name": "com.example.instabank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrDHW8he9-Cdldvei2iLxm5w8CE-EFpn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

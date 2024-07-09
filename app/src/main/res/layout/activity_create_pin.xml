@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg3">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/insta_logo"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Set a 6-digit MPIN"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="ENTER MPIN"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextPin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/btn_1"
+            android:padding="10dp"
+            android:contentDescription="Enter MPIN"
+            android:importantForAccessibility="yes"
+            android:hint="Enter your 6-digit MPIN"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/black"
+            android:maxLength="6"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="RE-ENTER MPIN"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/btn_1"
+            android:padding="10dp"
+            android:contentDescription="Re-enter MPIN"
+            android:importantForAccessibility="yes"
+            android:hint="Re-enter your 6-digit MPIN"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/black"
+            android:maxLength="6"/>
+
+        <Button
+            android:id="@+id/buttonSubmitPin"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:fontFamily="@font/montserrat_medium"
+            android:backgroundTint="@color/navyBlue"
+            android:textSize="20sp"
+            app:rippleColor="#04F6C3"/>
+
+    </LinearLayout>
+</FrameLayout>

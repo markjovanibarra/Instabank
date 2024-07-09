@@ -1,0 +1,51 @@
+<resources>
+    <string-array name="currencies_array">
+        <item>PHP</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CHF</item>
+        <item>CAD</item>
+        <item>AUD</item>
+        <item>CNY</item>
+        <item>INR</item>
+        <item>BRL</item>
+        <item>RUB</item>
+        <item>ZAR</item>
+        <item>MXN</item>
+        <item>SGD</item>
+        <item>HKD</item>
+        <item>NZD</item>
+        <item>KRW</item>
+        <item>NOK</item>
+        <item>SEK</item>
+        <item>SAR</item>
+        <!-- Add more currencies as needed -->
+    </string-array>
+
+    <string-array name="target_currencies_array">
+        <item>PHP</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CHF</item>
+        <item>CAD</item>
+        <item>AUD</item>
+        <item>CNY</item>
+        <item>INR</item>
+        <item>BRL</item>
+        <item>RUB</item>
+        <item>ZAR</item>
+        <item>MXN</item>
+        <item>SGD</item>
+        <item>HKD</item>
+        <item>NZD</item>
+        <item>KRW</item>
+        <item>NOK</item>
+        <item>SEK</item>
+        <item>SAR</item>
+        <!-- Add more target currencies as needed -->
+    </string-array>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/textViewPay"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Pay Bills"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/skyCable"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_3"
+        android:layout_below="@id/textViewPay"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewSkyCable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sky Cable"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/sky_cable"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Name"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Juan Dela Cruz"
+            android:fontFamily="@font/montserrat_light"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:maxLength="30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Account Number"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="9, 10, 12, 16 digits"
+            android:fontFamily="@font/montserrat_light"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:maxLength="16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Amount"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.00"
+            android:fontFamily="@font/montserrat_light"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:inputType="numberDecimal"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/textViewCurrentBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Current Balance: Php 0.00"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction is free of charge."
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/skyCable"/>
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Pay"
+        android:layout_below="@id/textViewFee"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"
+        android:backgroundTint="@color/navyBlue"
+        app:rippleColor="#04F6C3"/>
+
+</RelativeLayout>

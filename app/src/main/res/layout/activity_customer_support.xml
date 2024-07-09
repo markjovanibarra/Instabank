@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg4">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Support"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write your Concern:"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+
+    <EditText
+        android:id="@+id/etConcern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Enter your concern here"
+        android:fontFamily="@font/montserrat_light"
+        android:textColorHint="@color/darkGray"
+        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Concern"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"
+        android:backgroundTint="@color/navyBlue"
+        android:textColor="@color/white"
+        android:onClick="submitConcern"
+        android:layout_marginBottom="16dp"
+        app:rippleColor="#04F6C3"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us:"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Facebook AppCompatImageButton -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:rippleColor="#04F6C3"
+         />
+
+        <!-- SMS AppCompatImageButton -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonSMS"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/contact"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:rippleColor="#04F6C3"/>
+
+        <!-- Email AppCompatImageButton -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonSendEmail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/email"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:rippleColor="#04F6C3"
+             />
+
+    </LinearLayout>
+
+
+</LinearLayout>

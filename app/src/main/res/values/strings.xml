@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">instabank</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="currency_switch_desc">Switch currency display</string>
+    <string-array name="conversion_types">
+        <item>Peso to USD</item>
+        <item>USD to Peso</item>
+    </string-array>
+    <string-array name="currency_types">
+        <item>PHP</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="sim_options">
+        <item>Smart</item>
+        <item>TNT</item>
+        <item>Globe</item>
+        <item>TM</item>
+        <item>DITO</item>
+    </string-array>
+
+    <string-array name="load_type_options">
+        <item>Regular</item>
+
+    </string-array>
+
+</resources>

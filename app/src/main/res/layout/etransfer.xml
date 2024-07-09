@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg5">
+
+    <TextView
+        android:id="@+id/textViewEtransfer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="E-Transfer"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewBanks"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Banks"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEtransfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBanks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonGcash"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Gcash"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/gcash"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonPaypal"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawableTop="@drawable/paypal"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Paypal"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonPaymaya"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Paymaya"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/maya"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonShopee"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Shopee"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/shopee"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="320dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonBDO"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/bdo"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonBPI"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/bpi"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonSecurityBank"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/security_bank"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+        <Button
+            android:id="@+id/buttonLandBank"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/landbank"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:rippleColor="#04F6C3"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/navigation_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/buttonTransactions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/transact"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/home"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/user"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
